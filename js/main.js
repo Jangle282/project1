@@ -1,15 +1,16 @@
 //GLOBAL VARIABLES
 var canvas = document.getElementById('canvas');
 ctx = canvas.getContext('2d');
-var width = 600
-var height = 300
+var width = document.getElementById('canvas').getAttribute('width')
+var height = document.getElementById('')getAttribute('height')
+console.log(height)
 var objectsArray = []
 var chickenArray = []
 var frameCounter = 0
 
 // ONSTART
 function createBackground(){
-  var startY = 220
+  var startY = height*0.75
   var startX = 0
   var tileWidth = 5
   var noTiles = width / tileWidth

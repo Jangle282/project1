@@ -1,14 +1,13 @@
-set up sheets and folders
-basic structure (look at prev solutions for tresure and memory)
-research other games with same movements. 
-practise with animation ratehr than set interval 
-
-get movements across landscape
-  maxence solution with with the angles in it ??
-create landscap
 create click-kill functionality - maybe maxdamage
+mobile landscape sizing
+trello
+
+create landscape
 find images - how big are they??
-title & design start screen 
+design start screnn 
+design game over screen 
+
+points
 animationframe versus interval - animation is msoother but too fast - howto slow it down? and modualte the speed
 randomise entry times
 make landscape uneven 
