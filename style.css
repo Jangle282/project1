@@ -1,3 +1,14 @@
-canvas {
+@font-face {
+  font-family: 'GameOver';
+  src: url('jenniferroberts/Library/Fonts-Bold/Gameover.otf'), format('truetype');
+  }
+
+
+  canvas {
   border: 1px solid black;
 }
+
+.gameArea {
+  margin: 50px;
+}
+

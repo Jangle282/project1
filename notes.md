@@ -1,4 +1,4 @@
-create click-kill functionality - maybe maxdamage
+<!-- create click-kill functionality - maybe maxdamage
 mobile landscape sizing
 trello
 
@@ -96,4 +96,4 @@ how to show it landscape on a mobile
 
 how to use sprites
 
-background moving image
+background moving image -->
