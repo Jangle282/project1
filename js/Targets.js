@@ -1,20 +1,23 @@
 class Chicken {
-  constructor(x,y,imgName){
+  constructor(x,y,chickWidth,chickHeight,direction){
     this.x = x
     this.y = y
-    this.width = 62
-    this.height = 62
-    this.direction = imgName
+    this.width = chickWidth
+    this.height = chickHeight
+    this.direction = direction
     this.img = new Image()
-    // this.img.src = `images/chick${imgName}1.png`
-    this.img.src = `images/chick${imgName}1.png`
+    this.vx = 5 //*** */
+    this.vy = 2 //*** */
+    // this.img.src = `images/chick${direction}1.png`
+    this.img.src = `images/chick${direction}1.png`
   }
   midX() {return this.x +width/2}
   right() {return this.x + this.width}
   bottom() {return this.y + this.height}
   endGameEdge() {
     if (this.direction === 'left') {return this.x} 
-    else if (this.direction === 'right') {return this.right()}
+    if (this.direction === 'right') {return this.right()}
+    if (this.direction === "Dead") {return 500}
     }
   draw() {
     ctx.drawImage(this.img,this.x, this.y, this.width, this.height)
@@ -22,6 +25,7 @@ class Chicken {
     // img.onload = function(){ 
     // }
   }
+
   
 }
 
