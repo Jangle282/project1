@@ -4,6 +4,7 @@ class Object { // small pieces that make up the ground and are in an array
     this.y = y
     this.width = width
     this.height = height
+    this.yDiff = 0
     // this.img.src = 'file extension'+ imgName +'rest of files extension'
   }
   draw() {

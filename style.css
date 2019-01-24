@@ -4,12 +4,15 @@
   }
 
 
-  canvas {
-  border: 1px solid black;;
+#canvas {
+  border: 1px solid black;
+  margin: 30px 0 0;
   /* cursor: url(images/crosshairs.png) , crosshair; */
 }
 
 .gameArea {
-  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
