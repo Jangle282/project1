@@ -205,32 +205,32 @@ target.onload = function(){
 function drawInstructions(number) {
   if (number ===1) {
   ctx.fillStyle = '#181818'
-  ctx.font = "60px Gameover"
+  ctx.font = "60px Bungee"
   ctx.fillText(`Click the Chickens!`, 50, 80)
   }
   if (number ===2) {
     ctx.fillStyle = '#181818'
-    ctx.font = "60px Gameover"
+    ctx.font = "60px Bungee"
     ctx.fillText(`Click 'em Quick!`, 50, 80)
   }
   if (number ===3) {
     ctx.fillStyle = '#181818'
-    ctx.font = "60px Gameover"
+    ctx.font = "60px Bungee"
     ctx.fillText(`Before they get away!`, 50, 80)
   }
   if (number ===4) {
     ctx.fillStyle = '#181818'
-    ctx.font = "60px Gameover"
+    ctx.font = "60px Bungee"
     ctx.fillText(`Keep clickin'!`, 50, 80)
   }
   if (number ===5) {
     ctx.fillStyle = '#181818'
-    ctx.font = "60px Gameover"
+    ctx.font = "60px Bungee"
     ctx.fillText(`Don't stop!`, 50, 80)
   }
   if (number ===6) {
     ctx.fillStyle = '#181818'
-    ctx.font = "65px Gameover"
+    ctx.font = "65px Bungee"
     ctx.fillText(`mutha clucker!`, 50, 80)
   }
 }
@@ -240,12 +240,12 @@ function drawStartScreen() {
   ctx.fillRect(0,0,width,height)
   // ctx.drawImage(target, 50, 50,450,450)
   ctx.fillStyle = 'darkred'
-  ctx.font = "100px Gameover"
+  ctx.font = "100px Bungee Outline"
   var stScTextWidth = ctx.measureText('Chicken Clickin').width;
   var stScTextX = (width/2) - (stScTextWidth/2)
   ctx.fillText(`Chicken Clickin`, stScTextX, 240, width)
   ctx.fillStyle = 'azure'
-  ctx.font = "70px Gameover"
+  ctx.font = "70px Bungee Outline"
   var stScTextWidth = ctx.measureText('Click to Start').width;
   var stScTextX = (width/2) - (stScTextWidth/2)
   ctx.fillText('Click to Start', stScTextX, 340, width)
@@ -260,17 +260,17 @@ function drawGameOver() {
   ctx.fillStyle = '#181818'
   ctx.fillRect(0,150,width,300)
   ctx.fillStyle = 'darkred'
-  ctx.font = "110px Gameover"
+  ctx.font = "110px Bungee Outline"
   var textWidth = ctx.measureText("GAME OVER").width;
   var textX = (width/2) - (textWidth/2)
   ctx.fillText('GAME OVER', textX, 310, width)
   ctx.fillStyle = 'white'
-  ctx.font = "50px Gameover"
+  ctx.font = "50px Bungee Outline"
   var ScTextWidth = ctx.measureText(`Score: ${pointsArray[4].points}`).width;
   var ScTextX = (width/2) - (ScTextWidth/2)
   ctx.fillText(`Score: ${pointsArray[4].points}`, ScTextX, 390, width)
   ctx.fillStyle = '#181818'
-  ctx.font = "35px Gameover"
+  ctx.font = "35px Bungee"
   var rsTextWidth = ctx.measureText('Click to Restart').width;
   var rsTextX = (width/2) - (rsTextWidth/2)
   ctx.fillText('Click to Restart', rsTextX, 550, width)
@@ -312,7 +312,7 @@ function drawGround() {
 function drawPointsBox() {
   ctx.fillStyle = "#181818"
   ctx.fillText(`Score: ${points}`, 40, 570)
-  ctx.font = "60px Gameover"
+  ctx.font = "60px Bungee"
 }
 
 function drawChickens() {

@@ -1,6 +1,11 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Bungee+Outline');
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+
+
 @font-face {
-  font-family: 'GameOver';
-  src: url('Gameover.otf'), format('truetype');
+  font-family: 'Bungee Outline', sans-serif;
 }
 
 
