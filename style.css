@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'GameOver';
-  src: url('jenniferroberts/Library/Fonts-Bold/Gameover.otf'), format('truetype');
-  }
+  src: url('Gameover.otf'), format('truetype');
+}
 
 
 #canvas {
