@@ -25,8 +25,8 @@ class DeadChicken {
   constructor(x,y,direction,pic='Dead'){
     this.x = x
     this.y = y
-    this.width = 45
-    this.height = 45
+    this.width = 70
+    this.height = 70
     this.centreX = this.x + 0.5 * this.width
     this.centreY = this.y + 0.5 * this.height
     this.direction = direction
@@ -51,9 +51,10 @@ class DeadChicken {
     if (((this.x < width/2) && (this.x > width/4)) || (this.x > width*0.75)) {
       ctx.save()
       ctx.translate(this.centreX,this.centreY);
-      ctx.rotate((Math.PI / 180) * 50);
+      ctx.rotate((Math.PI / 180) * 100);
       ctx.translate(-this.centreX,-this.centreY)
-      ctx.drawImage(this.img,this.x, this.y, this.width, this.height)
+      ctx.drawImage(this.img, this.x, this.y, this.width, this.height)
+      console.log('drew one!')
       ctx.restore()
     }
   }
@@ -65,8 +66,8 @@ class ShotChicken {
   constructor(x,y,direction,pic='blood'){
     this.x = x
     this.y = y
-    this.width = 100
-    this.height = 100
+    this.width = 120
+    this.height = 120
     this.direction = direction
     this.img = new Image()
     this.vx = 5 //*** */
