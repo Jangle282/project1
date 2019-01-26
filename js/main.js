@@ -22,6 +22,7 @@ var gravity = 0.25
 var loserSong = new Audio('sounds/gameover.mp3')
 var background = new Image();
 background.src = 'images/background.png';
+var fontName = 'Bungee Outline';
 
 
 // ONSTART
@@ -29,7 +30,8 @@ window.onload = function() {
   canvas.style.cursor = "url(images/crosshairs2.png), crosshair";
   /* console.log(canvas.style.cursor) */
   createBackground()
-  drawStartScreen()
+  document.fonts.load('100px Bungee Outline').then(drawStartScreen);
+  // drawStartScreen()
 };
 
 // DRAW EVERYTHING during game play
@@ -135,7 +137,7 @@ function startGame() {
   intervalId = setInterval(function() {
     drawGame()
     updateEverything()
-  }, 100)
+  }, 80)
 }
 
 function stopGame() {
@@ -196,12 +198,6 @@ function killChicken(index, type) {
 }
 
 // DRAWING FUNCTIONS
-var target = new Image()
-target.src = 'images/crosshairsLrg.png'  
-
-target.onload = function(){ 
-}
-
 function drawInstructions(number) {
   if (number ===1) {
   ctx.fillStyle = '#181818'
@@ -423,3 +419,8 @@ canvas.addEventListener('mousedown', (e) => {
   // var rect = this.getBoundingClientRect(),
   // x = e.clientX - rect.left,
   // y = e.clientY - rect.top;
+
+  // var target = new Image()
+// target.src = 'images/crosshairsLrg.png'  
+// target.onload = function(){ 
+// }
